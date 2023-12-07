@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatefulWidget {
-  const DetailPage({Key? key}) : super(key: key);
+  const DetailPage({Key? key, required this.buttonTitle}) : super(key: key);
+  final String buttonTitle;
 
   @override
   State<DetailPage> createState() => _DetailPageState();
@@ -16,10 +17,13 @@ class _DetailPageState extends State<DetailPage> {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {
+          onPressed: (
+          ) {
+            Navigator.of(context).pop();
            
           },
-          child: Text('Voltar', style: TextStyle(fontSize: 20)),
+          child: Text(
+            widget.buttonTitle, style: const TextStyle(fontSize: 20)),
         ),
       ),
     );

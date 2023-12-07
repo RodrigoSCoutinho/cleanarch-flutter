@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () =>  Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => const DetailPage(),)
+        MaterialPageRoute(builder: (context) => const DetailPage(buttonTitle: 'Voltar para a home',),)
         ),
         tooltip: 'Increment',
         child: const Icon(Icons.add),

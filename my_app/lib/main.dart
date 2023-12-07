@@ -1,17 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/presentation/views/home/detail/detail_page.dart';
 import 'package:my_app/presentation/views/home/home_page.dart';
 
 
 void main() {
   runApp(const MyApp());
-}
-
-class Page {
-
-  builder() {
-
-  }
 }
 
 class MyApp extends StatelessWidget {
